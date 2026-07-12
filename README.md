@@ -23,3 +23,17 @@ Planning.
 
 See the [project specification](docs/project-specification.md) for the version
 1 scope.
+
+## Development database
+
+PostgreSQL runs locally through Docker Compose:
+
+```bash
+docker compose up -d
+```
+
+After installing dependencies, verify the Prisma connection with:
+
+```bash
+npm run db:check
+```
