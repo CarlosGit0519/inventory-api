@@ -1,4 +1,4 @@
-import { prisma } from '../lib/prisma';
+import { prisma } from '../lib/prisma.js';
 
 async function main(): Promise<void> {
   await prisma.$queryRaw`SELECT 1`;
