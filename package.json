@@ -11,8 +11,8 @@
     "build": "tsc --singleThreaded",
     "start": "node dist/server.js",
     "typecheck": "tsc --noEmit --singleThreaded",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test": "vitest run src",
+    "test:watch": "vitest src",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "db:check": "tsx src/scripts/check-database.ts"
