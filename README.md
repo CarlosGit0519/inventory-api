@@ -19,10 +19,35 @@ access control, and transactional business rules.
 
 ## Project status
 
-Planning.
+Core version 1 is implemented.
 
 See the [project specification](docs/project-specification.md) for the version
 1 scope.
+
+## Features
+
+- JWT authentication with `ADMIN` and `STAFF` roles
+- Category and product management with validation and soft deactivation
+- Paginated product search and filters
+- Immutable stock movement history with author traceability
+- Transactional protection against negative stock
+- PostgreSQL with Prisma ORM and Docker Compose
+- Automated integration tests for critical stock rules
+- Interactive Swagger / OpenAPI documentation
+
+## API documentation
+
+Run the development server and open:
+
+```text
+http://localhost:3001/docs
+```
+
+The raw OpenAPI document is available at:
+
+```text
+http://localhost:3001/docs.json
+```
 
 ## Development database
 
@@ -36,4 +61,12 @@ After installing dependencies, verify the Prisma connection with:
 
 ```bash
 npm run db:check
+```
+
+## Quality checks
+
+```bash
+npm run typecheck
+npm test
+npm run build
 ```
