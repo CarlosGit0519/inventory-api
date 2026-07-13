@@ -57,6 +57,15 @@ PostgreSQL runs locally through Docker Compose:
 docker compose up -d
 ```
 
+To run the complete API, database, and database migrations in containers:
+
+```bash
+docker compose up --build
+```
+
+The API is then available at `http://localhost:3001` and Swagger at
+`http://localhost:3001/docs`.
+
 After installing dependencies, verify the Prisma connection with:
 
 ```bash
