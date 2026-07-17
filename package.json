@@ -24,6 +24,9 @@
   "keywords": [],
   "author": "Carlos",
   "license": "ISC",
+  "engines": {
+    "node": ">=24.0.0 <25.0.0"
+  },
   "type": "module",
   "bugs": {
     "url": "https://github.com/CarlosGit0519/inventory-api/issues"

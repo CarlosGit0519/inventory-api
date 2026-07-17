@@ -49,6 +49,13 @@ The raw OpenAPI document is available at:
 http://localhost:3001/docs.json
 ```
 
+## Deployment
+
+The repository includes a `render.yaml` Blueprint that provisions the API and
+a PostgreSQL database on Render. Create a new Blueprint Instance in Render and
+select this repository to deploy it. The free database is suitable for a
+portfolio demo, but expires after 30 days.
+
 ## Development database
 
 PostgreSQL runs locally through Docker Compose:
