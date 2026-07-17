@@ -49,6 +49,16 @@ The raw OpenAPI document is available at:
 http://localhost:3001/docs.json
 ```
 
+## Live demo
+
+The API is deployed on Render:
+
+- [Interactive Swagger documentation](https://inventory-api-6k0r.onrender.com/docs)
+- [Health check](https://inventory-api-6k0r.onrender.com/health)
+
+The free Render service may take up to a minute to wake up after a period of
+inactivity.
+
 ## Deployment
 
 The repository includes a `render.yaml` Blueprint that provisions the API and
